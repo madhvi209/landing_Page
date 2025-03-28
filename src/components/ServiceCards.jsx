@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLaptopCode, FaPalette, FaMobileAlt, FaBullhorn, FaGlobe } from "react-icons/fa";
+import Navbar from "./Navbar";
 
 const services = [
   { title: "Web Development", icon: <FaLaptopCode />, description: "Customized, responsive, and scalable web solutions.", bgImage: "url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg?cs=srgb&dl=background-blur-bright-220067.jpg&fm=jpg')" },
@@ -12,6 +13,7 @@ const services = [
 const ServiceCards = () => {
   return (
     <section className="py-12 bg-gray-100">
+      <Navbar/>
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-800">Our Services</h2>
         <p className="text-lg text-gray-600 mt-4">We offer premium solutions tailored to your needs.</p>
