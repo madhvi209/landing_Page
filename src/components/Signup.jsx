@@ -137,9 +137,12 @@ const SignupPage = () => {
 
                 <p className="text-center text-gray-600 mt-4">
                     Already have an account?{" "}
-                    <a href="/login" className="text-[#04668D] font-semibold hover:underline">
+                    <span
+                        onClick={() => navigate("/login")}
+                        className="text-[#04668D] font-semibold hover:underline cursor-pointer"
+                    >
                         Log In
-                    </a>
+                    </span>
                 </p>
             </div>
         </div>
