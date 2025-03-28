@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 const pricing = [
     {
@@ -24,6 +25,7 @@ const pricing = [
 const PricingSection = () => {
     return (
         <section className="py-12 bg-gray-100">
+            <Navbar/>
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-4xl font-bold text-gray-800">Our Plans</h2>
                 <p className="text-lg text-gray-600 mt-4">Choose the plan that fits your needs.</p>
