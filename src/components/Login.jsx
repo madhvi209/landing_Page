@@ -15,7 +15,7 @@ const LoginPage = () => {
     const { user, loading } = useSelector((state) => state.user);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    
+
 
     useEffect(() => {
         if (user) {
@@ -67,9 +67,9 @@ const LoginPage = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <div>
-            <Navbar/>
-        </div>
+            <div>
+                <Navbar />
+            </div>
             <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
                 <h2 className="text-2xl font-bold text-center text-gray-800">Login to Your Account</h2>
 
@@ -111,9 +111,12 @@ const LoginPage = () => {
 
                 <p className="text-center text-gray-600 mt-4">
                     Don't have an account?{" "}
-                    <a href="/signup" className="text-[#04668D] font-semibold hover:underline">
+                    <span
+                        onClick={() => navigate("/signup")}
+                        className="text-[#04668D] font-semibold hover:underline cursor-pointer"
+                    >
                         Sign Up
-                    </a>
+                    </span>
                 </p>
             </div>
         </div>
