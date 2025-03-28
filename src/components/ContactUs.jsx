@@ -1,9 +1,11 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import Navbar from "./Navbar";
 
 const ContactUs = () => {
     return (
         <section className="py-12 bg-gray-100">
+            <Navbar/>
             <div className="max-w-7xl mx-auto px-6">
                 <h2 className="text-4xl font-bold text-gray-800 text-center">Get In Touch</h2>
                 <p className="text-lg text-gray-600 mt-4 text-center">
